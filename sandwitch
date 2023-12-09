@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome 
+        </title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+        <h3>Heading</h3>
+        <h4>Heading</h4>
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Quos id alias totam corporis impedit error veritatis rerum debitis ex, nisi sapiente magnam accusantium sequi. 
+     Consectetur quisquam illum vero quos quidem.</pre>
+        <hr>
+        <br>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quos id alias totam corporis impedit error veritatis rerum debitis ex, nisi sapiente magnam accusantium sequi. 
+            Consectetur quisquam illum vero quos quidem.</p>
+
+
+            <a href="https://www.google.com" target="_target" title="click button" >click me </a>
+            <button style "font-size:px;">Bread</button>
+            <button style "font-size:25px;">Bacon</button>
+
+
+    </body>
+</html>
