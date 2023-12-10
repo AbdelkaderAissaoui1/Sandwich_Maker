@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(100, 197, 165);
+}
+
+header * {
+    width: 1000px;
+    text-align: center;
+}
+
+footer {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+}
+
+.title {
+    text-shadow: 4px 0 #1b7678, -4px 0 #1b7678, 0 4px #1b7678, 0 -4px #1b7678,
+                 2px 2px #1b7678, -2px -2px #1b7678, 2px -2px #1b7678, 2px -2px #1b7678;
+    font-family: cursive;
+    color: white;
+    margin: 10px auto 0 auto;
+    padding: 40px;
+}
+
+#main-container {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    margin: -10px auto 0 auto;
+}
+
+#central-container {
+    width: 700px;
+    height: 100%;
+    margin: 0 10px 0 10px;
+    background-color: #87CEEB;
+    border: 5px solid #1b7678;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#left-sidemenu,#right-sidemenu {
+    width: 100px;
+    height: 100%;
+}
+
+#left-sidemenu button, #right-sidemenu button {
+    height: 100%;
+    width: 100%;
+    background-color: #e5f7f7;
+    border: 5px solid #1b7678;
+    color: #1b7678;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#left-sidemenu button:hover, #right-sidemenu button:hover {
+    background-color: rgb(203, 238, 228);
+}
+
+footer {
+    text-align: center;
+}
+
+footer * {
+    color: white;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background-color: #1b7678;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 2px 0 2px;
+}
+
+footer button:hover {
+    background-color: #7a9d9d;
+    cursor: pointer;
+}
+
+#thanks {
+    margin-top: 110px;
+    text-align: center;
+    font-family: cursive;
+    color: #146162;
+}
