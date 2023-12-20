@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Welcome 
-        </title>
-    </head>
-    <body>
-        <h1>Heading</h1>
-        <h2>Heading</h2>
-        <h3>Heading</h3>
-        <h4>Heading</h4>
-        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Quos id alias totam corporis impedit error veritatis rerum debitis ex, nisi sapiente magnam accusantium sequi. 
-     Consectetur quisquam illum vero quos quidem.</pre>
-        <hr>
-        <br>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/icon.ico">
+    <link rel="stylesheet" href="sandwich.css">
+    <title>Sandwich Maker</title>
+  </head>
 
+  <body>
+    <header>
+        <h1 class="title">Sandwich Maker</h1>
+    </header>
+    
+    <div id="main-container">
+        <table id="left-sidemenu">
+            <tbody>
+                <tr><td><button id="b1"><img src="res/images/fried-egg.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b2"><img src="res/images/cucumber.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b3"><img src="res/images/tomato-sauce.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b4"><img src="res/images/mustard.png" alt="Button Image"></button></td></tr>
+            </tbody>
+        </table>
+        <canvas id="central-container"></canvas>
+        <table id="right-sidemenu">
+            <tbody>
+                <tr><td><button id="b5"><img src="res/images/lettuce.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b6"><img src="res/images/cheese.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b7"><img src="res/images/beef.png" alt="Button Image"></button></td></tr>
+                <tr><td><button id="b8"><img src="res/images/onion.png" alt="Button Image"></button></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <button id="new">New</button>
+        <button id="undo">Undo</button>
+        <button id="order">Order</button>
+        <div id="price">Total Price: $0.00</div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quos id alias totam corporis impedit error veritatis rerum debitis ex, nisi sapiente magnam accusantium sequi. 
-            Consectetur quisquam illum vero quos quidem.</p>
-
-
-            <a href="https://www.google.com" target="_target" title="click button" >click me </a>
-            <button style "font-size:px;">Bread</button>
-            <button style "font-size:25px;">Bacon</button>
-
-
-    </body>
+    </footer>
+  </body>
+  <script src="sandwich2.js"></script>
 </html>
