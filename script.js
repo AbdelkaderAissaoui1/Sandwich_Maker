@@ -262,17 +262,17 @@ let bin = [];
 
 function updateSelection(ele) {
     ele.onclick = function () {
-        if (selected === null) {
+        if (selected == null) {
             selected = this;
-            this.classList.toggle("selected");
+            this.classList.add("selected");
         } else {
-            if (selected === this) {
+            if (selected == this) {
                 selected = null;
-                this.classList.toggle("selected");
+                this.classList.remove("selected");
             } else {
-                selected.classList.toggle("selected");
+                selected.classList.remove("selected");
                 selected = this;
-                this.classList.toggle("selected");
+                this.classList.add("selected");
             }
         }
     };
@@ -304,20 +304,17 @@ fetch("http://localhost:3000/data", {
         father.appendChild(newRow);
     }
     elements = document.querySelectorAll(".content table tr");
-    if (elements)
-        for (let i = 0; i < elements.length; i++) {
-            updateSelection(elements[i]);
-        }
 }).catch(err => {
     console.log(err);
 });
 
-
+/*
 search.onfocus = function() {
     if (selected != null)
-        selected.classList.toggle("selected");
+        selected.classList.remove("selected");
     selected = null;
 };
+*/
 
 search.oninput = function () {
     for (let i = 0; i < elements.length; i++) {
@@ -332,14 +329,14 @@ search.oninput = function () {
 rej.onclick = function () {
     if (selected !== null) {
         selected.style.display = "none";
+        selected.classList.remove("selected");
         bin.push(selected);
-        selected.classList.toggle("selected");
         selected = null;
     }
 };
 rev.onclick = function () {
     if (bin.length > 0)
-        bin.pop().style = "display: table-row;";
+        bin.pop().style.display = "table-row";
 };
 reset.addEventListener("click", function () {
     sandwich = [];
@@ -367,7 +364,7 @@ acc.onclick = function () {
             newRow.appendChild(newColumn);
             updateSelection(newRow);
             father.appendChild(newRow);
-            elements = document.querySelectorAll(".content table tr");
+            // elements = document.querySelectorAll(".content table tr");
 
             const sandwichData = {
                 id: bod.length + 1,
@@ -434,7 +431,7 @@ acc.onclick = function () {
             newRow.appendChild(newColumn);
             updateSelection(newRow);
             father.appendChild(newRow);
-            elements = document.querySelectorAll(".content table tr");
+            // elements = document.querySelectorAll(".content table tr");
 
             const sandwichData = {
                 id: bod.length+1,
@@ -461,5 +458,7 @@ acc.onclick = function () {
             alert("New input added successfully.");
         }
     }
+    if (selected)
+    selected.classList.remove("selected");
     selected = null;
 }
