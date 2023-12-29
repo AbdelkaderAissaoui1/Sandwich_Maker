@@ -1,41 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/icon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <title>Sandwich Maker</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
         <h1 class="title">Sandwich Maker</h1>
     </header>
     <div id="main-container">
-        <table id="left-sidemenu">
-            <tbody>
-                <tr><td><button id="b1">Bottom bun</button></td></tr>
-                <tr><td><button id="b2">Top bun</button></td></tr>
-                <tr><td><button id="b3">Ketchup</button></td></tr>
-                <tr><td><button id="b4">Mustard</button></td></tr>
-            </tbody>
-        </table>
-        <canvas id="central-container"></canvas>
-        <table id="right-sidemenu">
-            <tbody>
-                <tr><td><button id="b5">Lettuce</button></td></tr>
-                <tr><td><button id="b6">Cheese</button></td></tr>
-                <tr><td><button id="b7">Beef</button></td></tr>
-                <tr><td><button id="b8">Onions</button></td></tr>
-            </tbody>
-        </table>
+        <div class="all">
+            <table id="left-sidemenu">
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button></td>
+                    <td><button class="item" id="b1"><img src="res/images/icons/retro.png" alt="Bottom bun"></button>
+                    </td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b2"><img src="res/images/icons/retro (1).png" alt="Top bun"></button>
+                    </td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b3"><img src="res/images/icons/tomato-sauce.png"
+                                alt="Ketchup"></button>
+                    </td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b4"><img src="res/images/icons/mustard.png" alt="Mustard"></button>
+                    </td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+
+            </table>
+            <canvas width=1400 height=800 id="central-container"></canvas>
+            <table id="right-sidemenu">
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b5"><img src="res/images/icons/lettuce.png" alt="Lettuce"></button>
+                    </td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b6"><img src="res/images/icons/cheese.png" alt="Cheese"></button></td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b7"><img src="res/images/icons/beef.png" alt="Beef"></button></td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button class="substract"><i class="fa fa fa-minus"></i></button>
+                    <td><button class="item" id="b8"><img src="res/images/icons/onion.png" alt="Onions"></button></td>
+                    <td><button class="add"><i class="fa fa fa-plus"></i></button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="view">
+            <div class="list">
+                <div class="top">
+                    <p>
+                        Sandwiches List
+                    </p>
+                </div>
+                <div class="content">
+                    <table>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="tools">
+                <input class="search" type="text" placeholder="Search/Add..">
+                <button class="accept"><i class="fa fa-check"></i></button>
+                <button class="reject"><i class="fa fa-times"></i></button>
+                <button class="revert"><i class="fa fa-undo"></i></button>
+            </div>
+        </div>
     </div>
+    
     <footer>
-        <button id="new">New</button>
-        <button id="undo">Undo</button>
-        <button id="proceed">Proceed</button>
+        <button><i class="fa fa-refresh"></i></button>
     </footer>
-  </body>
-  <script src="script.js"></script>
+</body>
+<script src="script.js"></script>
+
 </html>
